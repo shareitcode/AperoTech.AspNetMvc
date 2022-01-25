@@ -1,0 +1,14 @@
+﻿@model AperoTech.AspNetMvc.Models.ManageUsers
+
+<div style="margin-top: 20px;">
+    @using (Html.BeginForm("Add", "AdminUser", FormMethod.Post))
+    {
+        <label>Name</label>
+        @Html.TextBoxFor(model => model.Name, new { id = "tb-name" })
+
+        <label>First name</label>
+        @Html.TextBoxFor(model => model.FirstName, new { id = "tb-first-name" })
+
+        <input type="submit" value="Add" />
+    }
+</div>
