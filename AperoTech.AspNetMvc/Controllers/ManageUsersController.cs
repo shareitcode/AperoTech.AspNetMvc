@@ -16,7 +16,7 @@ namespace AperoTech.AspNetMvc.Controllers
         [HttpPost]
         public ActionResult Add(ManageUsers manageUsers)
         {
-            return View();
+            return View("Index", manageUsers);
         }
     }
 }
